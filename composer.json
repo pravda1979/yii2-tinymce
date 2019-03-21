@@ -4,7 +4,7 @@
     "keywords": ["yii2", "tinymce", "WYSIWYG"],
     "type": "yii2-extension",
     "require": {
-        "php": "^5.4",
+        "php": ">=5.4",
         "yiisoft/yii2": "~2.0.0",
         "tinymce/tinymce": "^5"
     },
