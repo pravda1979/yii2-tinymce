@@ -18,7 +18,7 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "pravda1979\\tinymce\\": "src/"
+            "pravda1979\\tinymce\\": "src"
         }
     }
 }
