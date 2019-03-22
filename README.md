@@ -10,11 +10,11 @@ Preferred installation method for this extension is through [composer](http://ge
 
 To install TinyMCE extension run:
 ```
-composer require pravda1979/yii2-tinymce "*"
+composer require pravda1979/yii2-tinymce "~1.0.0"
 ```
 or add to the require section of your application's `composer.json` file.
 ```
-"pravda1979/yii2-tinymce": "*"
+"pravda1979/yii2-tinymce": "~1.0.0"
 ```
 
 Demo
@@ -31,6 +31,7 @@ use pravda1979\tinymce\TinyMce;
     'options' => ['rows' => 10],
     'language' => 'ru',
     'clientOptions' => [
+        // Setting by default
         'plugins' => 'print preview fullpage searchreplace autolink directionality visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern help',
         'toolbar' => 'formatselect | bold italic strikethrough forecolor backcolor formatpainter | link image media | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent | removeformat | addcomment',
     ]
@@ -45,6 +46,7 @@ use pravda1979\tinymce\TinyMce;
     'value' => 'test TinyMCE',
     'language' => 'ru',
     'clientOptions' => [
+        // Setting by default
         'plugins' => 'print preview fullpage searchreplace autolink directionality visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern help',
         'toolbar' => 'formatselect | bold italic strikethrough forecolor backcolor formatpainter | link image media | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent | removeformat | addcomment',
     ]
