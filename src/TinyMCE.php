@@ -12,6 +12,7 @@ use yii\helpers\Json;
 class TinyMCE extends InputWidget
 {
     public $clientOptions = [];
+    public $language;
 
     /**
      * Регистрируем assets, инициализируем TinyMCE editor
@@ -22,6 +23,13 @@ class TinyMCE extends InputWidget
         $view = $this->getView();
 
         Asset::register($view);
+
+        if (!empty($this->language) && $this->language !== 'en') {
+            $languageAssetBundle = LanguageAsset::register($view);
+            $languageFile = "langs/{$this->language}.js";
+            $languageAssetBundle->js[] = $languageFile;
+            $this->clientOptions['language'] = $this->language;
+        }
 
         $id = $this->options['id'];
 

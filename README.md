@@ -43,6 +43,7 @@ use pravda1979\tinymce\TinyMce;
 <?= \pravda1979\tinymce\TinyMCE::widget([
     'name' => 'test-tinymce',
     'value' => 'test TinyMCE',
+    'language' => 'ru',
     'clientOptions' => [
         'plugins' => 'print preview fullpage searchreplace autolink directionality visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern help',
         'toolbar' => 'formatselect | bold italic strikethrough forecolor backcolor formatpainter | link image media | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent | removeformat | addcomment',
